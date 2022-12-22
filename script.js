@@ -57,18 +57,6 @@ while (confirm("Iniciar cajero") === true) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //Function de cliente
 function userAccess(retiro) {//a partir de acá inicia el proceso de retiro del cliente
     console.log("Un cliente ha ingresado")
@@ -166,20 +154,20 @@ function adminAccess(carga) {
     totalBilletesDeCinco = cantidadBilletesDeCinco * billeteCinco;
     totalBilletesDeDiez = cantidadBilletesDeDiez * billeteDiez;
 
-
+    //Console.log de todo lo que el admin realizó.
 
     console.log("Cantidad de billetes de Cien cargados: ", cantidadBilletesDeCien);
     console.log("Cantidad de billetes de Cincuenta cargados: ", cantidadBilletesDeCincuenta);
     console.log("Cantidad de billetes de Veinte cargados: ", cantidadBilletesDeVeinte);
     console.log("Cantidad de billetes de Diez cargados: ", cantidadBilletesDeDiez);
     console.log("Cantidad de billetes de Cinco cargados: ", cantidadBilletesDeCinco);
-    //Esta tampoco
+    
     console.log("total de billetes de Cien cargados: ", totalBilletesDeCien);
     console.log("Total de billetes de Cincuenta cargados: ", totalBilletesDeCincuenta);
     console.log("Total de billetes de Veinte cargados", totalBilletesDeViente);
     console.log("Total de billetes de Diez cargados", totalBilletesDeDiez);
     console.log("Total de billetes de Cinco cargados", totalBilletesDeCinco);
-    //Ni te digo esta
+    
     totalDineroCajero = (totalBilletesDeCien + totalBilletesDeCincuenta + totalBilletesDeViente + totalBilletesDeDiez + totalBilletesDeCinco);
     console.log(dineroDelCajero)
     console.log("Dinero total del cajero: ", totalDineroCajero);
